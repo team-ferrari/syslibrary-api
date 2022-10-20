@@ -2,7 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
-    tsconfigRootDir : __dirname, 
+    tsconfigRootDir: __dirname,
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint/eslint-plugin'],
@@ -17,9 +17,25 @@ module.exports = {
   },
   ignorePatterns: ['.eslintrc.js'],
   rules: {
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    'no-undef': 'error',
+    'no-explicit-any': 'off',
+    'valid-typeof': 'error',
+    'no-unused-vars': 'error',
+    'no-const-assign': 'error',
+    'no-use-before-define': 'warn',
+    'explicit-function-return-type': 'off',
+    'explicit-module-boundary-types': 'off',
+
+    semi: ['warn', 'always'],
+    quotes: ['warn', 'single'],
+    eqeqeq: ['error', 'always'],
+    'no-irregular-whitespace': ['error', { skipComments: true }],
+    'no-magic-numbers': [
+      'error',
+      {
+        ignoreDefaultValues: true,
+        detectObjects: true,
+      },
+    ],
   },
 };
