@@ -1,0 +1,6 @@
+node_modules/
+.vscode/
+.husky
+src/**/*.spec.ts
+test/**/*.e2e-spec.ts
+test/**/*.spec.ts
