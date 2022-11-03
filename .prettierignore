@@ -1,0 +1,8 @@
+.dockerignore
+.editorconfig
+.eslintignore
+.husky/
+.lintstagedrc
+yarn.lock
+node_modules/
+.prettierignore
