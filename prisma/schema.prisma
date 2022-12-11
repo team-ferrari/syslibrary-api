@@ -4,7 +4,7 @@ datasource db {
 }
 
 generator client {
-  provider = "mysql"
+  provider = "prisma-client-js"
 }
 
 model Author {

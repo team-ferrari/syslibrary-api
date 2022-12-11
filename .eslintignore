@@ -2,5 +2,7 @@ node_modules/
 .vscode/
 .husky
 src/**/*.spec.ts
+dist/
 test/**/*.e2e-spec.ts
 test/**/*.spec.ts
+*.prisma

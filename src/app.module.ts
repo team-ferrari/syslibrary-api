@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { LoggerModule } from 'nestjs-pino';
+import { BooksModule } from './modules/books/books.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { LoggerModule } from 'nestjs-pino';
         },
       },
     }),
+    BooksModule,
   ],
   controllers: [],
   providers: [],
